@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trypuoyy-react-hello-world-deployment
+  labels:
+    app: trypuoyy-react-hello-world
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: trypuoyy-react-hello-world
+  template:
+    metadata:
+      labels:
+        app: trypuoyy-react-hello-world
+    spec:
+      containers:
+        - name: trypuoyy-react-hello-world
+          image: kshrdautopilot/trypuoyy-react-hello-world
+          ports:
+            - containerPort: 3000
