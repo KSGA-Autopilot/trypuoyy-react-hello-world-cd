@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: trypuoyy-react-hello-world
-          image: kshrdautopilot/trypuoyy-react-hello-world
+          image: kshrdautopilot/trypuoyy-react-hello-world:2023-12-07-09-34-39
           ports:
             - containerPort: 3000
